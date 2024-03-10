@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body onload="startSlider()">
+<div class="slider-container">
+    <img class="slider-image" id="img-1" style="transform: translateX(0);" src="./img/hyldemoer.jpeg" alt="">
+    <img class="slider-image" id="img-2" style="transform: translateX(100%);" src="./img/img_8703_5733815eddf2b32a20c1865a.jpeg" alt="">
+    <img class="slider-image" id="img-3" style="transform: translateX(200%);" src="./img/OskarKlever_Hyldemoer5.jpg" alt="">
+</div>
+   
+<div class="buttons">
+    <button onclick="showImg1()" class="slider-button" id="btn1">1</button>
+    <button onclick="showImg2()" class="slider-button" id="btn2">2</button>
+    <button onclick="showImg3()" class="slider-button" id="btn3">3</button>
+    
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(108, 103, 255);
+}
+
+
+
+.slider-container {
+    overflow: hidden; /* versteckt die Bilder jenseits der Container-Grenzen */
+    height: 550px;
+    width: 400px;
+    position: relative; /* poitioniert den container passend zum slider-image mit position: absolute*/
+    background-color: bisque;
+}
+
+.slider-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: transform 225ms ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.slider-button {
+    margin: 12px;
+    background-color: rgb(156, 152, 249);;
+    font-size: 24px;
+    font-weight: bold;
+    color:  rgb(70, 64, 255);
+}
